@@ -8,11 +8,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "export": "next export",
+    "predeploy": "npm run build && npm run export",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
-    "next": "14.1.2",
+    "next": "^14.1.4",
     "react": "^18",
     "react-dom": "^18",
     "usellm": "^0.13.0"
